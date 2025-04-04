@@ -7,7 +7,7 @@ const Transactions = () => {
   const [loading, setLoading] = useState(true);
 
   // Change this to show different number of recent transactions
-  const numberOfTransactions = 5;
+  const numberOfTransactions = 6;
 
   useEffect(() => {
     const transactionsRef = query(ref(database, "transactions"), limitToLast(numberOfTransactions));
